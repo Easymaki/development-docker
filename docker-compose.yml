@@ -32,7 +32,6 @@ services:
       - "80:80"
       - "443:443"
     depends_on:
-      - php7.3
       - php7.4
       - php8.0
 
