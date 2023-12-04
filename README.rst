@@ -23,8 +23,7 @@ Installation
 #. Clone the environment repository:
 
     .. code-block:: bash
-
-        $ git clone git@github.com:cscart/development-docker.git ~/srv
+        $ git clone git@github.com:Easymaki/development-docker.git ~/srv
         $ cd ~/srv
 
 #. Create the directory to store CS-Cart files:
