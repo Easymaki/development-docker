@@ -11,6 +11,16 @@ services:
     ports:
       - "3306:3306"
 
+  mysql8.0:
+    image: mysql:8.0
+    container_name: mysql8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./app/db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
   nginx:
     image: nginx:alpine
     container_name: nginx
@@ -25,19 +35,6 @@ services:
       - php7.3
       - php7.4
       - php8.0
-
-  php7.3:
-    build:
-      context: ./config/php7.3
-      dockerfile: Dockerfile
-    container_name: php7.3
-    working_dir: /app
-    volumes:
-      - ./app:/app
-      - ./config/php7.3/php-ini-overrides.ini:/usr/local/etc/php/conf.d/00-php.ini
-      - ./bin/sendmail:/usr/local/bin/sendmail
-    environment:
-        PHP_IDE_CONFIG: serverName=localhost
 
   php7.4:
     build:
