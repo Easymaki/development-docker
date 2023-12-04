@@ -1,5 +1,5 @@
 run:
-	docker-compose up -d --build nginx mysql5.7 mysql8.0 php8.0 php7.4
+	docker-compose up -d --build nginx mysql8.0 php8.0 php7.4
 
 cli-7.4: run
 	docker exec -it php7.4 bash
