@@ -126,7 +126,7 @@ Uncomment the lines in docker-compose.yml and run the following commands:
 
     .. code-block:: bash
 
-        $ git clone git@github.com:cscart/development-docker.git ~/srv
+        $ git clone git@github.com:Easymaki/development-docker.git ~/srv
         $ cd ~/srv
 
 #. Создайте папку для файлов CS-Cart:
